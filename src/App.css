@@ -55,7 +55,7 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.1);
-  padding: 15px 80px;
+  padding: 15px 65px;
 
   /* fix the position of the navigation */
 }
@@ -111,20 +111,26 @@ body {
 }
 
 .column {
-  padding: 0px 50px;
-  margin: 0px 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* margin: 0px auto;
+  max-width: 1200px; */
+}
+
+.row {
+  text-align: center;
+  cursor: pointer;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 110px;
-  padding: 0px 30px;
-  margin: 0px 55px;
-  align-content: center;
+  justify-content: center;
+  grid-template-columns: 0fr 0fr 0fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  gap: 25px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
 }
 
 img {
@@ -201,10 +207,6 @@ ul > li > a {
   color: gray;
 }
 
-.row {
-  cursor: pointer;
-}
-
 .card__stats {
   display: flex;
   justify-content: space-between;
@@ -223,7 +225,7 @@ ul > li > a {
 .rating__stats > .material-symbols-outlined {
   font-size: 22px;
   display: flex;
-  color: rgb(240, 240, 6);
+  color: rgb(7, 7, 7);
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 

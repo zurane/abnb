@@ -15,9 +15,8 @@ export default function Card(props) {
         <div className='column'>
             <div className='row'>
                 <div className='card'>
-                   
                     <div className="badge"><i className="material-icons" onClick={toggle} style={{ color: isActive ? '#ffafd0' : '#f5f5f5' }}>favorite</i></div>
-                    <img src={props.card.image} alt="Apartment" width="350px" height="350px" />
+                    <img src={props.card.image} alt="Apartment" width="295px" height="295px" />
                     <div className='card__stats'>
                         <h4 className='card__title'>{props.card.title}</h4>
                         <div className="rating__stats">
